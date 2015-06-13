@@ -33,7 +33,7 @@ class ViewController: UIViewController {
 
         if sessionEnabled {
 
-            var hapticTypeRawValue: Int = 8
+            let hapticTypeRawValue: Int
 
             if let title = sender.titleLabel?.text {
                 switch title {
@@ -56,8 +56,11 @@ class ViewController: UIViewController {
                 case "Click":
                     hapticTypeRawValue = 8
                 default:
-                    break
+                    hapticTypeRawValue = 8
                 }
+
+            } else {
+                hapticTypeRawValue = 8
             }
 
             let message: [String: AnyObject] = [
