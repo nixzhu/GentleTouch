@@ -7,15 +7,29 @@
 //
 
 import WatchKit
-import Foundation
-
+import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
+
+    @IBOutlet var touchCountLabel: WKInterfaceLabel!
+
+    lazy var session: WCSession = {
+        let session = WCSession.defaultSession()
+        session.delegate = self
+        return session
+        }()
+
+    var sessionEnabled: Bool {
+        return session.reachable
+    }
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+
+        print(session)
+        session.activateSession()
     }
 
     override func willActivate() {
@@ -28,4 +42,17 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+}
+
+extension InterfaceController: WCSessionDelegate {
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject]) {
+
+        print("receive message: \(message)")
+
+        if let
+            touchCountMessage = message as? [String: Int],
+            touchCount = touchCountMessage["touchCount"] {
+                touchCountLabel.setText("\(touchCount)")
+        }
+    }
 }
