@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50C03AFD1B2BC873001E277D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C03AFC1B2BC873001E277D /* AppDelegate.swift */; };
+		50C03AFF1B2BC873001E277D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C03AFE1B2BC873001E277D /* ViewController.swift */; };
+		50C03B021B2BC873001E277D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C03B001B2BC873001E277D /* Main.storyboard */; };
+		50C03B041B2BC873001E277D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C03B031B2BC873001E277D /* Assets.xcassets */; };
+		50C03B071B2BC873001E277D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C03B051B2BC873001E277D /* LaunchScreen.storyboard */; };
+		50C03B121B2BC873001E277D /* GentleTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C03B111B2BC873001E277D /* GentleTouchTests.swift */; };
+		50C03B1D1B2BC873001E277D /* GentleTouchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C03B1C1B2BC873001E277D /* GentleTouchUITests.swift */; };
+		50C03B221B2BC873001E277D /* GentleTouch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 50C03B211B2BC873001E277D /* GentleTouch WatchKit App.app */; };
+		50C03B281B2BC873001E277D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C03B261B2BC873001E277D /* Interface.storyboard */; };
+		50C03B2A1B2BC873001E277D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C03B291B2BC873001E277D /* Assets.xcassets */; };
+		50C03B311B2BC873001E277D /* GentleTouch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 50C03B301B2BC873001E277D /* GentleTouch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50C03B381B2BC874001E277D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C03B371B2BC874001E277D /* InterfaceController.swift */; };
+		50C03B3A1B2BC874001E277D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C03B391B2BC874001E277D /* ExtensionDelegate.swift */; };
+		50C03B3C1B2BC874001E277D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C03B3B1B2BC874001E277D /* NotificationController.swift */; };
+		50C03B3E1B2BC874001E277D /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C03B3D1B2BC874001E277D /* GlanceController.swift */; };
+		50C03B401B2BC874001E277D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C03B3F1B2BC874001E277D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50C03B0E1B2BC873001E277D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C03AF11B2BC873001E277D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C03AF81B2BC873001E277D;
+			remoteInfo = GentleTouch;
+		};
+		50C03B191B2BC873001E277D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C03AF11B2BC873001E277D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C03AF81B2BC873001E277D;
+			remoteInfo = GentleTouch;
+		};
+		50C03B231B2BC873001E277D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C03AF11B2BC873001E277D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C03B201B2BC873001E277D;
+			remoteInfo = "GentleTouch WatchKit App";
+		};
+		50C03B321B2BC873001E277D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C03AF11B2BC873001E277D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C03B2F1B2BC873001E277D;
+			remoteInfo = "GentleTouch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50C03B471B2BC874001E277D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				50C03B311B2BC873001E277D /* GentleTouch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C03B4B1B2BC874001E277D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				50C03B221B2BC873001E277D /* GentleTouch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		50C03AF91B2BC873001E277D /* GentleTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GentleTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C03AFC1B2BC873001E277D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50C03AFE1B2BC873001E277D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50C03B011B2BC873001E277D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50C03B031B2BC873001E277D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50C03B061B2BC873001E277D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50C03B081B2BC873001E277D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C03B0D1B2BC873001E277D /* GentleTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GentleTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C03B111B2BC873001E277D /* GentleTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentleTouchTests.swift; sourceTree = "<group>"; };
+		50C03B131B2BC873001E277D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C03B181B2BC873001E277D /* GentleTouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GentleTouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C03B1C1B2BC873001E277D /* GentleTouchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentleTouchUITests.swift; sourceTree = "<group>"; };
+		50C03B1E1B2BC873001E277D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C03B211B2BC873001E277D /* GentleTouch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GentleTouch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C03B271B2BC873001E277D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		50C03B291B2BC873001E277D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50C03B2B1B2BC873001E277D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C03B301B2BC873001E277D /* GentleTouch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GentleTouch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C03B361B2BC874001E277D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		50C03B371B2BC874001E277D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		50C03B391B2BC874001E277D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		50C03B3B1B2BC874001E277D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		50C03B3D1B2BC874001E277D /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		50C03B3F1B2BC874001E277D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50C03B411B2BC874001E277D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50C03AF61B2BC873001E277D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C03B0A1B2BC873001E277D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C03B151B2BC873001E277D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C03B2D1B2BC873001E277D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50C03AF01B2BC873001E277D = {
+			isa = PBXGroup;
+			children = (
+				50C03AFB1B2BC873001E277D /* GentleTouch */,
+				50C03B101B2BC873001E277D /* GentleTouchTests */,
+				50C03B1B1B2BC873001E277D /* GentleTouchUITests */,
+				50C03B251B2BC873001E277D /* GentleTouch WatchKit App */,
+				50C03B341B2BC873001E277D /* GentleTouch WatchKit Extension */,
+				50C03AFA1B2BC873001E277D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50C03AFA1B2BC873001E277D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50C03AF91B2BC873001E277D /* GentleTouch.app */,
+				50C03B0D1B2BC873001E277D /* GentleTouchTests.xctest */,
+				50C03B181B2BC873001E277D /* GentleTouchUITests.xctest */,
+				50C03B211B2BC873001E277D /* GentleTouch WatchKit App.app */,
+				50C03B301B2BC873001E277D /* GentleTouch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50C03AFB1B2BC873001E277D /* GentleTouch */ = {
+			isa = PBXGroup;
+			children = (
+				50C03AFC1B2BC873001E277D /* AppDelegate.swift */,
+				50C03AFE1B2BC873001E277D /* ViewController.swift */,
+				50C03B001B2BC873001E277D /* Main.storyboard */,
+				50C03B031B2BC873001E277D /* Assets.xcassets */,
+				50C03B051B2BC873001E277D /* LaunchScreen.storyboard */,
+				50C03B081B2BC873001E277D /* Info.plist */,
+			);
+			path = GentleTouch;
+			sourceTree = "<group>";
+		};
+		50C03B101B2BC873001E277D /* GentleTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				50C03B111B2BC873001E277D /* GentleTouchTests.swift */,
+				50C03B131B2BC873001E277D /* Info.plist */,
+			);
+			path = GentleTouchTests;
+			sourceTree = "<group>";
+		};
+		50C03B1B1B2BC873001E277D /* GentleTouchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50C03B1C1B2BC873001E277D /* GentleTouchUITests.swift */,
+				50C03B1E1B2BC873001E277D /* Info.plist */,
+			);
+			path = GentleTouchUITests;
+			sourceTree = "<group>";
+		};
+		50C03B251B2BC873001E277D /* GentleTouch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				50C03B261B2BC873001E277D /* Interface.storyboard */,
+				50C03B291B2BC873001E277D /* Assets.xcassets */,
+				50C03B2B1B2BC873001E277D /* Info.plist */,
+			);
+			path = "GentleTouch WatchKit App";
+			sourceTree = "<group>";
+		};
+		50C03B341B2BC873001E277D /* GentleTouch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				50C03B371B2BC874001E277D /* InterfaceController.swift */,
+				50C03B391B2BC874001E277D /* ExtensionDelegate.swift */,
+				50C03B3B1B2BC874001E277D /* NotificationController.swift */,
+				50C03B3D1B2BC874001E277D /* GlanceController.swift */,
+				50C03B3F1B2BC874001E277D /* Assets.xcassets */,
+				50C03B411B2BC874001E277D /* Info.plist */,
+				50C03B351B2BC874001E277D /* Supporting Files */,
+			);
+			path = "GentleTouch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		50C03B351B2BC874001E277D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C03B361B2BC874001E277D /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50C03AF81B2BC873001E277D /* GentleTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C03B4C1B2BC874001E277D /* Build configuration list for PBXNativeTarget "GentleTouch" */;
+			buildPhases = (
+				50C03AF51B2BC873001E277D /* Sources */,
+				50C03AF61B2BC873001E277D /* Frameworks */,
+				50C03AF71B2BC873001E277D /* Resources */,
+				50C03B4B1B2BC874001E277D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C03B241B2BC873001E277D /* PBXTargetDependency */,
+			);
+			name = GentleTouch;
+			productName = GentleTouch;
+			productReference = 50C03AF91B2BC873001E277D /* GentleTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50C03B0C1B2BC873001E277D /* GentleTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C03B4F1B2BC874001E277D /* Build configuration list for PBXNativeTarget "GentleTouchTests" */;
+			buildPhases = (
+				50C03B091B2BC873001E277D /* Sources */,
+				50C03B0A1B2BC873001E277D /* Frameworks */,
+				50C03B0B1B2BC873001E277D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C03B0F1B2BC873001E277D /* PBXTargetDependency */,
+			);
+			name = GentleTouchTests;
+			productName = GentleTouchTests;
+			productReference = 50C03B0D1B2BC873001E277D /* GentleTouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50C03B171B2BC873001E277D /* GentleTouchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C03B521B2BC874001E277D /* Build configuration list for PBXNativeTarget "GentleTouchUITests" */;
+			buildPhases = (
+				50C03B141B2BC873001E277D /* Sources */,
+				50C03B151B2BC873001E277D /* Frameworks */,
+				50C03B161B2BC873001E277D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C03B1A1B2BC873001E277D /* PBXTargetDependency */,
+			);
+			name = GentleTouchUITests;
+			productName = GentleTouchUITests;
+			productReference = 50C03B181B2BC873001E277D /* GentleTouchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		50C03B201B2BC873001E277D /* GentleTouch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C03B481B2BC874001E277D /* Build configuration list for PBXNativeTarget "GentleTouch WatchKit App" */;
+			buildPhases = (
+				50C03B1F1B2BC873001E277D /* Resources */,
+				50C03B471B2BC874001E277D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C03B331B2BC873001E277D /* PBXTargetDependency */,
+			);
+			name = "GentleTouch WatchKit App";
+			productName = "GentleTouch WatchKit App";
+			productReference = 50C03B211B2BC873001E277D /* GentleTouch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		50C03B2F1B2BC873001E277D /* GentleTouch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C03B441B2BC874001E277D /* Build configuration list for PBXNativeTarget "GentleTouch WatchKit Extension" */;
+			buildPhases = (
+				50C03B2C1B2BC873001E277D /* Sources */,
+				50C03B2D1B2BC873001E277D /* Frameworks */,
+				50C03B2E1B2BC873001E277D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GentleTouch WatchKit Extension";
+			productName = "GentleTouch WatchKit Extension";
+			productReference = 50C03B301B2BC873001E277D /* GentleTouch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50C03AF11B2BC873001E277D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = nixWork;
+				TargetAttributes = {
+					50C03AF81B2BC873001E277D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					50C03B0C1B2BC873001E277D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 50C03AF81B2BC873001E277D;
+					};
+					50C03B171B2BC873001E277D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 50C03AF81B2BC873001E277D;
+					};
+					50C03B201B2BC873001E277D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					50C03B2F1B2BC873001E277D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 50C03AF41B2BC873001E277D /* Build configuration list for PBXProject "GentleTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50C03AF01B2BC873001E277D;
+			productRefGroup = 50C03AFA1B2BC873001E277D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C03AF81B2BC873001E277D /* GentleTouch */,
+				50C03B0C1B2BC873001E277D /* GentleTouchTests */,
+				50C03B171B2BC873001E277D /* GentleTouchUITests */,
+				50C03B201B2BC873001E277D /* GentleTouch WatchKit App */,
+				50C03B2F1B2BC873001E277D /* GentleTouch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50C03AF71B2BC873001E277D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C03B071B2BC873001E277D /* LaunchScreen.storyboard in Resources */,
+				50C03B041B2BC873001E277D /* Assets.xcassets in Resources */,
+				50C03B021B2BC873001E277D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C03B0B1B2BC873001E277D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C03B161B2BC873001E277D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C03B1F1B2BC873001E277D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C03B2A1B2BC873001E277D /* Assets.xcassets in Resources */,
+				50C03B281B2BC873001E277D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C03B2E1B2BC873001E277D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C03B401B2BC874001E277D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50C03AF51B2BC873001E277D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C03AFF1B2BC873001E277D /* ViewController.swift in Sources */,
+				50C03AFD1B2BC873001E277D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C03B091B2BC873001E277D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C03B121B2BC873001E277D /* GentleTouchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C03B141B2BC873001E277D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C03B1D1B2BC873001E277D /* GentleTouchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C03B2C1B2BC873001E277D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C03B3C1B2BC874001E277D /* NotificationController.swift in Sources */,
+				50C03B3A1B2BC874001E277D /* ExtensionDelegate.swift in Sources */,
+				50C03B381B2BC874001E277D /* InterfaceController.swift in Sources */,
+				50C03B3E1B2BC874001E277D /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50C03B0F1B2BC873001E277D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C03AF81B2BC873001E277D /* GentleTouch */;
+			targetProxy = 50C03B0E1B2BC873001E277D /* PBXContainerItemProxy */;
+		};
+		50C03B1A1B2BC873001E277D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C03AF81B2BC873001E277D /* GentleTouch */;
+			targetProxy = 50C03B191B2BC873001E277D /* PBXContainerItemProxy */;
+		};
+		50C03B241B2BC873001E277D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C03B201B2BC873001E277D /* GentleTouch WatchKit App */;
+			targetProxy = 50C03B231B2BC873001E277D /* PBXContainerItemProxy */;
+		};
+		50C03B331B2BC873001E277D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C03B2F1B2BC873001E277D /* GentleTouch WatchKit Extension */;
+			targetProxy = 50C03B321B2BC873001E277D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50C03B001B2BC873001E277D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C03B011B2BC873001E277D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50C03B051B2BC873001E277D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C03B061B2BC873001E277D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		50C03B261B2BC873001E277D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C03B271B2BC873001E277D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50C03B421B2BC874001E277D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50C03B431B2BC874001E277D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50C03B451B2BC874001E277D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "GentleTouch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.GentleTouch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		50C03B461B2BC874001E277D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "GentleTouch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.GentleTouch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		50C03B491B2BC874001E277D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = GentleTouch_WatchKit_Extension;
+				INFOPLIST_FILE = "GentleTouch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.GentleTouch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		50C03B4A1B2BC874001E277D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = GentleTouch_WatchKit_Extension;
+				INFOPLIST_FILE = "GentleTouch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.GentleTouch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		50C03B4D1B2BC874001E277D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GentleTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.GentleTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50C03B4E1B2BC874001E277D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GentleTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.GentleTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50C03B501B2BC874001E277D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GentleTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.GentleTouchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GentleTouch.app/GentleTouch";
+			};
+			name = Debug;
+		};
+		50C03B511B2BC874001E277D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GentleTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.GentleTouchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GentleTouch.app/GentleTouch";
+			};
+			name = Release;
+		};
+		50C03B531B2BC874001E277D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GentleTouchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.GentleTouchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GentleTouch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		50C03B541B2BC874001E277D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GentleTouchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.GentleTouchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GentleTouch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50C03AF41B2BC873001E277D /* Build configuration list for PBXProject "GentleTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C03B421B2BC874001E277D /* Debug */,
+				50C03B431B2BC874001E277D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C03B441B2BC874001E277D /* Build configuration list for PBXNativeTarget "GentleTouch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C03B451B2BC874001E277D /* Debug */,
+				50C03B461B2BC874001E277D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50C03B481B2BC874001E277D /* Build configuration list for PBXNativeTarget "GentleTouch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C03B491B2BC874001E277D /* Debug */,
+				50C03B4A1B2BC874001E277D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50C03B4C1B2BC874001E277D /* Build configuration list for PBXNativeTarget "GentleTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C03B4D1B2BC874001E277D /* Debug */,
+				50C03B4E1B2BC874001E277D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50C03B4F1B2BC874001E277D /* Build configuration list for PBXNativeTarget "GentleTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C03B501B2BC874001E277D /* Debug */,
+				50C03B511B2BC874001E277D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50C03B521B2BC874001E277D /* Build configuration list for PBXNativeTarget "GentleTouchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C03B531B2BC874001E277D /* Debug */,
+				50C03B541B2BC874001E277D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50C03AF11B2BC873001E277D /* Project object */;
+}
