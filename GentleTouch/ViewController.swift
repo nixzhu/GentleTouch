@@ -108,7 +108,7 @@ extension ViewController: WCSessionDelegate {
 
             for i in 0..<randomTouchTimes {
 
-                let seconds = NSTimeInterval(i)
+                let seconds = NSTimeInterval(i) * 2
 
                 delay(seconds) {
                     let hapticTypeRawValue = Int(arc4random() % 9)
