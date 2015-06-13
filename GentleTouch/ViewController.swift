@@ -74,9 +74,20 @@ class ViewController: UIViewController {
 
             session.sendMessage(message, replyHandler: nil, errorHandler: { error in
                 print(error)
+
+                let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .Alert)
+                let dismissAction = UIAlertAction(title: "Dismiss", style: .Default, handler: nil)
+                alertController.addAction(dismissAction)
+                self.presentViewController(alertController, animated: true, completion: nil)
             })
 
             print("send message: \(message)")
+
+        } else {
+            let alertController = UIAlertController(title: "Sorry", message: "Can NOT connect to WATCH!", preferredStyle: .Alert)
+            let dismissAction = UIAlertAction(title: "Dismiss", style: .Default, handler: nil)
+            alertController.addAction(dismissAction)
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
 }

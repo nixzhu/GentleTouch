@@ -35,7 +35,14 @@ class InterfaceController: WKInterfaceController {
         if sessionEnabled {
             session.sendMessage(["randomTouchTimes": 10], replyHandler: nil, errorHandler: { error in
                 print(error)
+
+                let dismissAction = WKAlertAction(title: "Dismiss", style: .Default, handler: {})
+                self.presentAlertControllerWithTitle("Error", message: error.localizedDescription, preferredStyle: .Alert, actions: [dismissAction])
             })
+
+        } else {
+            let dismissAction = WKAlertAction(title: "Dismiss", style: .Default, handler: {})
+            self.presentAlertControllerWithTitle("Sorry", message: "Can NOT connect to iPhone!", preferredStyle: .Alert, actions: [dismissAction])
         }
     }
 }
