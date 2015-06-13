@@ -10,13 +10,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="GentleTouch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="5Bw-Eb-Hda">
+                        <label width="1" height="1" alignment="center" verticalAlignment="center" text="?" textAlignment="center" minimumScaleFactor="0.10000000000000001" id="5Bw-Eb-Hda">
                             <color key="textColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="font" type="system" pointSize="60"/>
+                            <fontDescription key="font" type="system" pointSize="100"/>
                         </label>
                     </items>
                     <connections>
-                        <outlet property="touchCountLabel" destination="5Bw-Eb-Hda" id="D1E-Xj-Vco"/>
+                        <outlet property="hapticTypeLabel" destination="5Bw-Eb-Hda" id="DeR-jG-e8T"/>
                     </connections>
                 </controller>
             </objects>

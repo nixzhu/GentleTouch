@@ -21,8 +21,6 @@ class ViewController: UIViewController {
         return session.paired && session.watchAppInstalled && session.reachable
     }
 
-    var touchCount = 0
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,13 +33,40 @@ class ViewController: UIViewController {
 
         if sessionEnabled {
 
-            let message = ["touchCount": ++touchCount]
+            var hapticTypeRawValue: Int = 8
+
+            if let title = sender.titleLabel?.text {
+                switch title {
+                case "Notification":
+                    hapticTypeRawValue = 0
+                case "DirectionUp":
+                    hapticTypeRawValue = 1
+                case "DirectionDown":
+                    hapticTypeRawValue = 2
+                case "Success":
+                    hapticTypeRawValue = 3
+                case "Failure":
+                    hapticTypeRawValue = 4
+                case "Retry":
+                    hapticTypeRawValue = 5
+                case "Start":
+                    hapticTypeRawValue = 6
+                case "Stop":
+                    hapticTypeRawValue = 7
+                case "Click":
+                    hapticTypeRawValue = 8
+                default:
+                    break
+                }
+            }
+
+            let message = ["hapticTypeRawValue": hapticTypeRawValue]
             
             session.sendMessage(message, replyHandler: nil, errorHandler: { error in
                 print(error)
             })
 
-            print("send touchCount")
+            print("send hapticType")
         }
     }
 }
@@ -49,3 +74,4 @@ class ViewController: UIViewController {
 extension ViewController: WCSessionDelegate {
 
 }
+

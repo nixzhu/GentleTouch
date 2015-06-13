@@ -11,7 +11,7 @@ import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
 
-    @IBOutlet var touchCountLabel: WKInterfaceLabel!
+    @IBOutlet var hapticTypeLabel: WKInterfaceLabel!
 
     lazy var session: WCSession = {
         let session = WCSession.defaultSession()
@@ -25,22 +25,34 @@ class InterfaceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        // Configure interface objects here.
 
         session.activateSession()
     }
+}
 
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+extension WKHapticType {
+    var name: String {
+        switch self {
+        case .Notification:
+            return "Notification"
+        case .DirectionUp:
+            return "DirectionUp"
+        case .DirectionDown:
+            return "DirectionDown"
+        case .Success:
+            return "Success"
+        case .Failure:
+            return "Failure"
+        case .Retry:
+            return "Retry"
+        case .Start:
+            return "Start"
+        case .Stop:
+            return "Stop"
+        case .Click:
+            return "Click"
+        }
     }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
 }
 
 extension InterfaceController: WCSessionDelegate {
@@ -49,13 +61,14 @@ extension InterfaceController: WCSessionDelegate {
         print("receive message: \(message)")
 
         if let
-            touchCountMessage = message as? [String: Int],
-            touchCount = touchCountMessage["touchCount"] {
-                touchCountLabel.setText("\(touchCount)")
+            hapticMessage = message as? [String: Int],
+            hapticTypeRawValue = hapticMessage["hapticTypeRawValue"],
+            type = WKHapticType(rawValue: hapticTypeRawValue) {
 
-                if let type = WKHapticType(rawValue: touchCount % 9) {
-                    WKInterfaceDevice.currentDevice().playHaptic(type)
-                }
+                hapticTypeLabel.setText(type.name)
+
+                WKInterfaceDevice.currentDevice().playHaptic(type)
         }
     }
 }
+
