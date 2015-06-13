@@ -31,42 +31,47 @@ class ViewController: UIViewController {
 
     @IBAction func touch(sender: UIButton) {
 
-        if sessionEnabled {
+        let hapticTypeRawValue: Int
 
-            let hapticTypeRawValue: Int
-
-            if let title = sender.titleLabel?.text {
-                switch title {
-                case "Notification":
-                    hapticTypeRawValue = 0
-                case "DirectionUp":
-                    hapticTypeRawValue = 1
-                case "DirectionDown":
-                    hapticTypeRawValue = 2
-                case "Success":
-                    hapticTypeRawValue = 3
-                case "Failure":
-                    hapticTypeRawValue = 4
-                case "Retry":
-                    hapticTypeRawValue = 5
-                case "Start":
-                    hapticTypeRawValue = 6
-                case "Stop":
-                    hapticTypeRawValue = 7
-                case "Click":
-                    hapticTypeRawValue = 8
-                default:
-                    hapticTypeRawValue = 8
-                }
-
-            } else {
+        if let title = sender.titleLabel?.text {
+            switch title {
+            case "Notification":
+                hapticTypeRawValue = 0
+            case "DirectionUp":
+                hapticTypeRawValue = 1
+            case "DirectionDown":
+                hapticTypeRawValue = 2
+            case "Success":
+                hapticTypeRawValue = 3
+            case "Failure":
+                hapticTypeRawValue = 4
+            case "Retry":
+                hapticTypeRawValue = 5
+            case "Start":
+                hapticTypeRawValue = 6
+            case "Stop":
+                hapticTypeRawValue = 7
+            case "Click":
+                hapticTypeRawValue = 8
+            default:
                 hapticTypeRawValue = 8
             }
+
+        } else {
+            hapticTypeRawValue = 8
+        }
+
+        sendHapticMessageWithRawValue(hapticTypeRawValue)
+    }
+
+    func sendHapticMessageWithRawValue(hapticTypeRawValue: Int) {
+
+        if sessionEnabled {
 
             let message: [String: AnyObject] = [
                 "hapticTypeRawValue": hapticTypeRawValue,
             ]
-            
+
             session.sendMessage(message, replyHandler: nil, errorHandler: { error in
                 print(error)
             })
@@ -78,5 +83,29 @@ class ViewController: UIViewController {
 
 extension ViewController: WCSessionDelegate {
 
+    func delay(time: NSTimeInterval, work: dispatch_block_t) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
+            work()
+        }
+    }
+
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject]) {
+
+        print("receive message: \(message)")
+
+        if let randomTouchTimes = message["randomTouchTimes"] as? Int {
+
+            for i in 0..<randomTouchTimes {
+
+                let seconds = NSTimeInterval(i)
+
+                delay(seconds) {
+                    let hapticTypeRawValue = Int(arc4random() % 9)
+
+                    self.sendHapticMessageWithRawValue(hapticTypeRawValue)
+                }
+            }
+        }
+    }
 }
 

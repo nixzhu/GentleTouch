@@ -15,6 +15,15 @@
                             <fontDescription key="font" type="system" pointSize="100"/>
                         </label>
                     </items>
+                    <menu key="menu" id="B0P-yg-zdF">
+                        <items>
+                            <menuItem title="Random Touch" icon="shuffle" id="cfM-Ly-TA4">
+                                <connections>
+                                    <action selector="requestSomeRandomTouch" destination="AgC-eL-Hgc" id="QA2-NL-TNd"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="hapticTypeLabel" destination="5Bw-Eb-Hda" id="DeR-jG-e8T"/>
                     </connections>

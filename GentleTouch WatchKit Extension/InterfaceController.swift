@@ -28,6 +28,17 @@ class InterfaceController: WKInterfaceController {
 
         session.activateSession()
     }
+
+    // MARK: Actions
+
+    @IBAction func requestSomeRandomTouch() {
+        if sessionEnabled {
+            session.sendMessage(["randomTouchTimes": 5], replyHandler: nil, errorHandler: { error in
+                print(error)
+            })
+        }
+    }
+
 }
 
 extension WKHapticType {
@@ -56,6 +67,7 @@ extension WKHapticType {
 }
 
 extension InterfaceController: WCSessionDelegate {
+
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject]) {
 
         print("receive message: \(message)")
