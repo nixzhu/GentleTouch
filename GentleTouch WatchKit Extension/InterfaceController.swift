@@ -28,7 +28,6 @@ class InterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
 
-        print(session)
         session.activateSession()
     }
 
@@ -53,6 +52,10 @@ extension InterfaceController: WCSessionDelegate {
             touchCountMessage = message as? [String: Int],
             touchCount = touchCountMessage["touchCount"] {
                 touchCountLabel.setText("\(touchCount)")
+
+                if let type = WKHapticType(rawValue: touchCount % 9) {
+                    WKInterfaceDevice.currentDevice().playHaptic(type)
+                }
         }
     }
 }
