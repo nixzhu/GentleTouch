@@ -61,8 +61,7 @@ extension InterfaceController: WCSessionDelegate {
         print("receive message: \(message)")
 
         if let
-            hapticMessage = message as? [String: Int],
-            hapticTypeRawValue = hapticMessage["hapticTypeRawValue"],
+            hapticTypeRawValue = message["hapticTypeRawValue"] as? Int,
             type = WKHapticType(rawValue: hapticTypeRawValue) {
 
                 hapticTypeLabel.setText(type.name)

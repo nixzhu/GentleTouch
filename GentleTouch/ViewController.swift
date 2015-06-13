@@ -60,13 +60,15 @@ class ViewController: UIViewController {
                 }
             }
 
-            let message = ["hapticTypeRawValue": hapticTypeRawValue]
+            let message: [String: AnyObject] = [
+                "hapticTypeRawValue": hapticTypeRawValue,
+            ]
             
             session.sendMessage(message, replyHandler: nil, errorHandler: { error in
                 print(error)
             })
 
-            print("send hapticType")
+            print("send message: \(message)")
         }
     }
 }
