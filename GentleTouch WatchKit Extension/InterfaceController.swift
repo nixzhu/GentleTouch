@@ -33,12 +33,11 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func requestSomeRandomTouch() {
         if sessionEnabled {
-            session.sendMessage(["randomTouchTimes": 5], replyHandler: nil, errorHandler: { error in
+            session.sendMessage(["randomTouchTimes": 10], replyHandler: nil, errorHandler: { error in
                 print(error)
             })
         }
     }
-
 }
 
 extension WKHapticType {
